@@ -550,7 +550,7 @@
             "description": "Beschrijving van de openbare ruimte bijvoorbeeld: Vogel. Wereldwijd komen 24 soorten albatrossen voor. De meeste leven op het zuidelijk halfrond. De grootste albatros heeft een spanwijdte van meer dan drie meter en is daarmee de grootste zeevogel ter wereld."
           },
           "heeftDossier": {
-            "type": "string",
+            "type": "object",
             "properties": {
               "dossier": {
                 "type": "string"
@@ -1204,6 +1204,7 @@
         "identifier": "dossier",
         "required": ["schema", "dossier"],
         "display": "dossier",
+        "isTemporal": false,
         "properties": {
           "schema": {
             "$ref": "https://schemas.data.amsterdam.nl/schema@v1.1.1#/definitions/schema"
